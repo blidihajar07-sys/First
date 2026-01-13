@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to my portfolio!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Hajar, web development beginner.">
+
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background: linear-gradient(to right, #EBBEDF, #667eea, #E359BE);
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            color: rgb(20, 11, 66);
+            text-align: center;
+            padding: 25px 10%;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+
+        #contactBtn {
+            background-color: #f182a7;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+        }
+        #contactBtn:hover{
+            background-color: #b03961;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            display: flex;
+            gap: 200px;
+            width: 100%;
+            background: linear-gradient(to right, #EBBEDF, #667eea, #E359BE);
+            justify-content: center;
+            z-index: 1000;
+            transition: .5s;
+        }
+        .logow{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        nav a {
+            text-decoration: none;
+            color: rgb(20, 11, 66);
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ed6bc4;
+        }
+        .profile-pic {
+            position: relative;
+            top: 10px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+        }
+        .projects {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#about" class="logow">About</a>
+            <a href="#skills" class="logow">Skills</a>
+            <a href="#projects" class="logow">Projects</a>
+            <a href="#contact" class="logow">Contact</a>
+    </nav>
+    </header>
+    <section id="about">
+        <img src="https://pbs.twimg.com/media/FptwTMJaAAAhHFI?format=jpg&name=small" alt="My photo" class="profile-pic">
+        <h1>Hajar</h1>
+        <p>A Computer science Student</p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>MySQL</li>
+            <li>Python</li>
+            <li>C</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+         <div class="projects">
+            <div class="card">Portfolio Website</div>
+            <div class="card">Simple Landing Page</div>
+        </div>
+    </section>
+    <section id="contact">
+        <a href="https://youtu.be/kBiLpDbuArA?si=ykoxZhNkoUWPO6AN" id="contactBtn">Contact me here(just trying if it works hoho)</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptas ad molestias aut aspernatur possimus amet vel enim doloremque adipisci iusto quas totam officia fugiat accusamus, hic in reiciendis. Optio!</p>
+        <h2>Contact</h2>
+        <p>Email: hajar@email.com</p>
+        <a href="http://www.linkedin.com/in/hajar" class="booDo">LinkedIn: linkedin.com/in/hajar</a>
+    </section>
+</body>
+</html>
+<!--#contactBtn {
+    display: inline-block;
+    background-color: #ff4081;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#contactBtn:hover {
+    background-color: #e91e63;
+}-->
